@@ -59,7 +59,7 @@ contract Staking {
 
         if (currentTime > lastUpdateTime) {
             uint256 elapsedTime = currentTime - lastUpdateTime;
-            uint256 daysElapsed = elapsedTime / DAY_IN_SECONDS; // Convert seconds to days
+            uint256 daysElapsed = elapsedTime / SECONDS_IN_DAY;
 
             if (daysElapsed > 0) {
                 user.rewards +=
