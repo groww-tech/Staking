@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 contract Staking {
     using SafeERC20 for IERC20;
 
-    uint256 constant DAY_IN_SECONDS = 86400;
+    uint256 constant SECONDS_IN_DAY = 86400;
     uint256 constant STAKE_REWARD = 1e21;
     uint256 constant REWARD = 1e18;
 
